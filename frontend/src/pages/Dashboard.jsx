@@ -10,6 +10,9 @@ const Dashboard = () => {
 
   const totalEmployees = employees.length;
 
+  console.log(import.meta.env.VITE_API_URL);
+
+
   useEffect(() => {
     const fetchAttendance = async () => {
       setLoading(true);
