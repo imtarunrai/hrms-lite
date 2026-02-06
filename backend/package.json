@@ -1,0 +1,29 @@
+{
+  "name": "hrms-backend",
+  "version": "1.0.0",
+  "description": "HRMS Backend using Node.js, Express and MongoDB",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "hrms",
+    "node",
+    "express",
+    "mongodb",
+    "rest-api"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^4.19.2",
+    "mongoose": "^9.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
