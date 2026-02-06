@@ -13,12 +13,8 @@ import errorHandler from "./middlewares/errorHandler.js";
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  }),
-);
+app.use(cors());
+app.options("*", cors())
 
 app.use(express.json());
 
@@ -27,7 +23,6 @@ app.use("/api/employees", employeeRoutes);
 app.use("/api/attendance", attendanceRoutes);
 
 app.use(errorHandler);
-console.log(process.env.MONGO_URI);
 
 // mongoose
 //   .connect(process.env.MONGO_URI, {
